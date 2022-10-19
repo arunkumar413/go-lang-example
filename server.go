@@ -22,11 +22,13 @@ func main() {
 	// Variables
 
 	var a int = 1
-	var b int8= 127
-	var c int16= 3545
-	var d int32=89080880
+	var b int8 = 127
+	var c int16 = 3545
+	var d int32 = 89080880
+	var e int64 = 3837473335
+	var f uint8 = 254
 
-	fmt.Println(a,b,c,d,e,f)
+	fmt.Println(a, b, c, d, e, f)
 
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
