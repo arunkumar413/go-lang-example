@@ -41,10 +41,10 @@ func main() {
 	//Strings
 	var name string = "Arun" // only double quotes are allowed
 
-
-	//
-
-	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name)
+	//Arrays
+	var fruits = [3]string{"Apple", "Banana", "Grapes"} // 3 string elements
+	var numbers = [5]int16{3, 5, 6, 7, 8}               // array of length 5 with integer elements
+	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers)
 
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
