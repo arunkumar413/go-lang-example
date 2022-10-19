@@ -18,6 +18,16 @@ func handle(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+	// Variables
+
+	var a int = 1
+	var b int8= 127
+	var c int16= 3545
+	var d int32=89080880
+
+	fmt.Println(a,b,c,d,e,f)
+
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
 	fmt.Println("Server listening on port ", portNumber)
