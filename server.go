@@ -19,16 +19,21 @@ func handle(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	// Variables
-
+	// Integers
 	var a int = 1
 	var b int8 = 127
 	var c int16 = 3545
 	var d int32 = 89080880
 	var e int64 = 3837473335
-	var f uint8 = 254
 
-	fmt.Println(a, b, c, d, e, f)
+	// Unsigned integers
+	var f uint8 = 254
+	var g uint16 = 7979
+	var h uint32 = 7988978
+	var i uint64 = 48094454
+	var j uint = 9889889900
+
+	fmt.Println(a, b, c, d, e, f, g, h, i, j)
 
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
