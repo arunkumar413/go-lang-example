@@ -33,7 +33,18 @@ func main() {
 	var i uint64 = 48094454
 	var j uint = 9889889900
 
-	fmt.Println(a, b, c, d, e, f, g, h, i, j)
+	//Float
+
+	var k float32 = 389343.343
+	var l float64 = 8.89889899394
+
+	//Strings
+	var name string = "Arun" // only double quotes are allowed
+
+
+	//
+
+	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name)
 
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
