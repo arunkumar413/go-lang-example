@@ -78,9 +78,10 @@ func main() {
 	// they are used organize multiple data types as a single unit
 
 	type User struct {
-		name string
-		age  int
-		city string
+		name   string
+		age    int
+		city   string
+		salary float32
 	}
 
 	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city, array1, array2, array3)
