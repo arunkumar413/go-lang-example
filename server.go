@@ -64,8 +64,19 @@ func main() {
 	var array3 = [3]int{3, 5, 6}                //array full initialized
 	var cars = [10]string{2: "Volvo", 5: "BMW"} // array of length 10 but initialize only 3 and 6 element
 
+	//Slices
+	//Slices are like arrays but the size can grow and shrink.
+	//Slices are defined without the length parameter so that they can crow and shrink as required.
+
+	var flowerSlice = []string{"Marigold", "Rose", "Jasmine"}
+	vegetableSlice := []string{"Tomato", "Potato", "Cluster beans"}
+
+	flowerSlice = append(flowerSlice, "Lilly") //append new element to the slice
+
 	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city, array1, array2, array3)
 	fmt.Println(cars[1])
+	fmt.Println(flowerSlice)
+	fmt.Println(vegetableSlice)
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
 	fmt.Println("Server listening on port ", portNumber)
