@@ -57,9 +57,15 @@ func main() {
 	//Access an array.
 
 	var city = cities[3]
+	cities[3] = "Pune" // change the fourth element of cities array
 
-	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city)
+	var array1 = [5]int{}                       // array not initialized
+	var array2 = [5]int{1, 5}                   //array partially initialized
+	var array3 = [3]int{3, 5, 6}                //array full initialized
+	var cars = [10]string{2: "Volvo", 5: "BMW"} // array of length 10 but initialize only 3 and 6 element
 
+	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city, array1, array2, array3)
+	fmt.Println(cars[1])
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
 	fmt.Println("Server listening on port ", portNumber)
