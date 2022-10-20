@@ -69,7 +69,7 @@ func main() {
 	//Slices are defined without the length parameter so that they can crow and shrink as required.
 
 	var flowerSlice = []string{"Marigold", "Rose", "Jasmine"}
-	vegetableSlice := []string{"Tomato", "Potato", "Cabbage"}
+	vegetableSlice := []string{"Tomato", "Potato", "Cabbage"} //slice created using := syntax
 
 	flowerSlice = append(flowerSlice, "Lilly") //append new element to the slice
 
