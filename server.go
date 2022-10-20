@@ -84,6 +84,12 @@ func main() {
 		salary float32
 	}
 
+	var user1 User
+	user1.name = "Arun"
+	user1.age = 33
+	user1.city = "Karimnagar"
+	user1.salary = 8949.444
+
 	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city, array1, array2, array3)
 	fmt.Println(cars[1])
 	fmt.Println(flowerSlice)
