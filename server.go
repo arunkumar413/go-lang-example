@@ -72,6 +72,16 @@ func main() {
 	vegetableSlice := []string{"Tomato", "Potato", "Cabbage"} //slice created using := syntax
 
 	flowerSlice = append(flowerSlice, "Lilly") //append new element to the slice
+	//Structures
+
+	// Structures in go similar to interfaces of Java and TypeScript.
+	// they are used organize multiple data types as a single unit
+
+	type User struct {
+		name string
+		age  int
+		city string
+	}
 
 	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city, array1, array2, array3)
 	fmt.Println(cars[1])
