@@ -41,10 +41,24 @@ func main() {
 	//Strings
 	var name string = "Arun" // only double quotes are allowed
 
-	//Arrays
-	var fruits = [3]string{"Apple", "Banana", "Grapes"} // 3 string elements
+	//Arrays.
+
+	// Length of arrays is fixed.
+	// We cannot add or remove elements from an array.
+
+	var fruits = [3]string{"Apple", "Banana", "Grapes"} // array of length 3 with string elements
 	var numbers = [5]int16{3, 5, 6, 7, 8}               // array of length 5 with integer elements
-	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers)
+
+	var orgs = [...]string{"Apple", "Meta", "Google"} // here length is inferred based on the definition of the array
+
+	//with := syntax
+	cities := [5]string{"NewYork", "Washington", "London", "New Delhi", "Mumbai"}
+
+	//Access an array.
+
+	var city = cities[3]
+
+	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, name, fruits, numbers, orgs, cities, city)
 
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
